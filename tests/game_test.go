@@ -5,12 +5,13 @@ import (
 	"github.com/AlessioCoser/fizzbuzzkata/game"
 )
 
-func TestReturnNumberAsString(t *testing.T) {
+func TestReturnsNumbersAsString(t *testing.T) {
 	equal("1", game.Say(1), t)
+	equal("2", game.Say(2), t)
 }
 
 func equal(expected interface{}, actual interface{}, t *testing.T) {
 	if actual != expected {
-		t.Errorf("Expected Number `%d` is not equals to `%d`", expected, actual)
+		t.Errorf("Expected Number `%q` is not equals to `%q`", expected, actual)
 	}
 }

@@ -1,5 +1,7 @@
 package game
 
+import "strconv"
+
 func Say(evaluatingNumber int) string {
-	return "1"
+	return strconv.Itoa(evaluatingNumber)
 }
