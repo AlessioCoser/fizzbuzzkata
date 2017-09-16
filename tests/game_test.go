@@ -23,6 +23,11 @@ func TestReturnsBazzWhenFiveAndMultiplesGiven(t *testing.T) {
 	equal("Buzz", game.Say(10), t)
 }
 
+func TestReturnsFizzBuzzWhenMultipleOfThreeAndFiveGiven(t *testing.T) {
+	equal("FizzBuzz", game.Say(15), t)
+	equal("FizzBuzz", game.Say(30), t)
+}
+
 func equal(expected interface{}, actual interface{}, t *testing.T) {
 	if actual != expected {
 		t.Errorf("Expected Number `%q` is not equals to `%q`", expected, actual)

@@ -7,7 +7,8 @@ type specialNumber struct{
 	word string
 }
 
-var specialNumbers [2]specialNumber = [2]specialNumber{
+var specialNumbers [3]specialNumber = [3]specialNumber{
+	{15, "FizzBuzz"},
 	{5, "Buzz"},
 	{3, "Fizz"},
 }
