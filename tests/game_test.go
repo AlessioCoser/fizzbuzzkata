@@ -10,6 +10,10 @@ func TestReturnsNumbersAsString(t *testing.T) {
 	equal("2", game.Say(2), t)
 }
 
+func TestReturnsFizzWhenThreeGiven(t *testing.T) {
+	equal("Fizz", game.Say(3), t)
+}
+
 func equal(expected interface{}, actual interface{}, t *testing.T) {
 	if actual != expected {
 		t.Errorf("Expected Number `%q` is not equals to `%q`", expected, actual)
