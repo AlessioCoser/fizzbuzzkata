@@ -1,4 +1,4 @@
-## FizzBuzz Kata
+## FizzBuzz Kata with Go
 
 **Goal**: Convert integers into a string with specific rules
 
@@ -89,12 +89,3 @@
 52 -> "Buzz"
 53 -> "FizzBuzz"
 ```
-
-### Special feature of completed Kata solution:
-
-- **not a single if statement**
-- flexible createable Rule sets via Abstract Factory pattern
-
-This version is written in C# with Xamarin Studio (should be able to open in Visual Studio too) with Mono.
-
-The version without LINQ is located in the branch "nolinq"
