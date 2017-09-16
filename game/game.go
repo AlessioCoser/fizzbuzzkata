@@ -2,14 +2,23 @@ package game
 
 import "strconv"
 
-func Say(evaluatingNumber int) string {
-	if evaluatingNumber % 3 == 0 {
-		return "Fizz"
+type specialNumber struct{
+	num int
+	word string
+}
+
+var specialNumbers [2]specialNumber = [2]specialNumber{
+	{5, "Buzz"},
+	{3, "Fizz"},
+}
+
+func Say(evaluating int) string {
+
+	for _, special := range specialNumbers {
+		if evaluating % special.num == 0 {
+			return special.word
+		}
 	}
 
-	if evaluatingNumber % 5 == 0 {
-		return "Buzz"
-	}
-
-	return strconv.Itoa(evaluatingNumber)
+	return strconv.Itoa(evaluating)
 }
