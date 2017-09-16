@@ -7,5 +7,9 @@ func Say(evaluatingNumber int) string {
 		return "Fizz"
 	}
 
+	if evaluatingNumber % 5 == 0 {
+		return "Buzz"
+	}
+
 	return strconv.Itoa(evaluatingNumber)
 }
