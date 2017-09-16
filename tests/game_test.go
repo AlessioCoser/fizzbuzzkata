@@ -6,8 +6,11 @@ import (
 )
 
 func TestReturnNumberAsString(t *testing.T) {
+	equal("1", game.Say(1), t)
+}
 
-	if game.Say(1) != "1" {
-		t.Errorf("not implemented yet")
+func equal(expected interface{}, actual interface{}, t *testing.T) {
+	if actual != expected {
+		t.Errorf("Expected Number `%d` is not equals to `%d`", expected, actual)
 	}
 }
